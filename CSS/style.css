@@ -1,0 +1,99 @@
+@font-face{
+	font-family:'Maiandra-Font';
+	src:url('../fonts/Maiandra-Font/Maiandra\ Font.ttf') format('truetype');
+}
+
+*{
+  font-family: 'Maiandra-Font', 'serif';
+}
+
+h1{
+  padding:25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link{
+  color: black;
+  font-weight: bold;
+}
+
+a:visited{
+  color: black;
+  font-weight: bold;
+}
+
+/*
+div, span, nav{
+  border: 3px;
+  border-style: solid;
+  color: black;
+}
+*/
+
+/*IDs*/
+
+#body{
+	background-color:#e4e8d5;
+
+/*background: #b4ddb4; /* Old browsers */
+/*background: -moz-linear-gradient(45deg, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%); /* FF3.6-15 */
+/*background: -webkit-linear-gradient(45deg, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* Chrome10-25,Safari5.1-6 */
+/*background: linear-gradient(45deg, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#overlay{
+  background-color: #3d91af;
+  /*margin:10%;*/
+  margin: 50px;
+  padding-bottom: 1px;
+  border-radius: 25px;
+  box-shadow: -7px 5px 5px gray;
+  text-align: center;
+}
+
+#navbar{
+  background-color: #ECCE7D;
+  padding:25px;
+  margin:-2px;
+  font-size: 15px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+#navbar li{
+  display:inline;
+}
+
+#promptAndInput{
+  margin: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* inner box shadow for text entry
+textarea{
+  box-shadow: -2px 3px 5px gray inset;
+}
+*/
+
+/*Classes*/
+
+.userInput{
+	height:250px;
+  width:1000px;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.button{
+  width: 60px;
+  border-radius: 35%;
+}
+
+.hidden{
+  display: none;
+}
