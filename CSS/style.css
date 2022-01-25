@@ -99,7 +99,7 @@ https://stackoverflow.com/questions/1269245/centering-floating-divs-within-anoth
 }
 
 .button{
-  width: 5%;
+  width: fit-content;
   border-radius: 25%;
 }
 
