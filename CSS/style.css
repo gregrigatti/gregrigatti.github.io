@@ -37,7 +37,7 @@ div, span, nav{
 
 #body{
 	background-color:#e4e8d5;
-
+  text-align: center;
 /*background: #b4ddb4; /* Old browsers */
 /*background: -moz-linear-gradient(45deg, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%); /* FF3.6-15 */
 /*background: -webkit-linear-gradient(45deg, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* Chrome10-25,Safari5.1-6 */
@@ -46,19 +46,19 @@ div, span, nav{
 }
 
 #overlay{
-  background-color: #3d91af;
+  background-color: #e4e8d5;
   /*margin:10%;*/
-  margin: 50px;
+  
+  width:80%;
   padding-bottom: 1px;
   border-radius: 25px;
   box-shadow: -7px 5px 5px gray;
-  text-align: center;
+  display: inline-block;
 }
 
 #navbar{
   background-color: #ECCE7D;
   padding:25px;
-  margin:-2px;
   font-size: 15px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
@@ -84,14 +84,23 @@ textarea{
 
 .userInput{
 	height:250px;
-  width:1000px;
+  width:95%;
   font-size: 22px;
   margin-bottom: 25px;
+  display:inline-block;
+}
+
+/*"display:inline-block on the two inner divs (the divs .userInput and .promptDivs are attached to)
+and "text-align: center" on the div containing them--this is how to center the inner divs
+https://stackoverflow.com/questions/1269245/centering-floating-divs-within-another-div*/
+.promptDivs{
+  width:80%;
+  display:inline-block;
 }
 
 .button{
-  width: 60px;
-  border-radius: 35%;
+  width: 5%;
+  border-radius: 25%;
 }
 
 .hidden{
