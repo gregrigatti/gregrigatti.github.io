@@ -1,2 +1,4 @@
 # gregrigatti.github.io
-#New website as of 1/19/2019.
+#A website to help kickstart some writing.
+#Pulls writing prompts from https://www.reddit.com/r/WritingPrompts/ using the Reddit API.
+#After writing, store submissions in browser's localstorage, for later pulling.
