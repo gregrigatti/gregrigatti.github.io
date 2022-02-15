@@ -33,10 +33,6 @@ $(document).ready(function(){
 				allPrompts[i].promptValue = prompt.data.title; //store each prompt for use elsewhere
 
 				li.innerHTML = '<h2>'+(i+1)+'/3 '+prompt.data.title+'</h2>' + li.innerHTML;
-
-				//whatever is in the first argument of .each becomes the prompt in function. Bc I put prompts.data.children in the
-				//first argument, that is what prompt refers to, that whole thing. Therefore prompt.data.title is shorthand for
-				//prompts.data.children.data.title
 			});
 		}
 	});
@@ -85,20 +81,13 @@ btns = {
 		}
 	},
 	//save json to browser's local storage
-	//something is off with my definition of allPrompts[1].textBox
 	submit:function(){
 		var objectsToSave = {
 			one:{prompt:allPrompts[0].promptValue, input:document.getElementById("text1").value},
 			two:{prompt:allPrompts[1].promptValue, input:document.getElementById("text2").value},
 			three:{prompt:allPrompts[2].promptValue, input:document.getElementById("text3").value}
-			//three:{prompt:allPrompts[2].promptValue, input:allPrompts[2].textBox.value} why doesn't allPrompts[2]textBox.value work
 		};
-		//localStorage['inputcache'] = JSON.stringify(objectsToSave);
-		//how to use a variable to differentiate submission names?
 		window.localStorage.setItem("Submission", JSON.stringify(objectsToSave));
-		//use these two lines for retrieving: 
-		//let newObject = window.localStorage.getItem("Submission");
-		//console.log(JSON.parse(newObject))
 		console.log('done', JSON.stringify(objectsToSave));
 	}
 }
