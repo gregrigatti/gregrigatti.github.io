@@ -19,19 +19,31 @@ var currentPromptDisplayed = 1;
 
 $(document).ready(function(){
 	jsonSubmissions = localStorage.getItem("Submission");
-	console.log("JSON: " + jsonSubmissions);
 
-	submissionsObject = JSON.parse(jsonSubmissions);
-	console.log("Object: " + submissionsObject.one.prompt);
+	if(jsonSubmissions===null){
+		console.log("null");
+		promptOne.h2.innerHTML = "No submissions found!"
+		promptOne.textBox.classList.add('hidden');
+		btnLeft.classList.add('hidden');
+		btnRight.classList.add('hidden');
+		btnSubmit.classList.add('hidden');
+	}
 
-	promptOne.h2.innerHTML = "1/3 " + submissionsObject.one.prompt;
-	promptOne.textBox.innerHTML = submissionsObject.one.input;
+	else{
+		console.log("JSON: " + jsonSubmissions);
 
-	promptTwo.h2.innerHTML = "2/3 " + submissionsObject.two.prompt;
-	promptTwo.textBox.innerHTML = submissionsObject.two.input;
+		submissionsObject = JSON.parse(jsonSubmissions);
+		console.log("Object: " + submissionsObject.one.prompt);
 
-	promptThree.h2.innerHTML = "3/3 " + submissionsObject.three.prompt;
-	promptThree.textBox.innerHTML = submissionsObject.three.input;
+		promptOne.h2.innerHTML = "1/3 " + submissionsObject.one.prompt;
+		promptOne.textBox.innerHTML = submissionsObject.one.input;
+
+		promptTwo.h2.innerHTML = "2/3 " + submissionsObject.two.prompt;
+		promptTwo.textBox.innerHTML = submissionsObject.two.input;
+
+		promptThree.h2.innerHTML = "3/3 " + submissionsObject.three.prompt;
+		promptThree.textBox.innerHTML = submissionsObject.three.input;
+	}
 });
 
 btns = {
