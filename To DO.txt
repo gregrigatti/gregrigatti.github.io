@@ -1,0 +1,27 @@
+***TO DO***
+
+index.html--add mouseover, mouseup, mousedown, mouseout event listeners to links in 
+navbar--mirror the buttons below.
+  Hide textboxes by default and only reveal 1 (if internet detected) or none (if no internet)
+  Create a "submitted" notification after clicking submit
+
+readsubmissions--Hide textboxes by default and only reveal 1 (if internet detected) or none (if no internet)
+
+Buttons--use an "initializeButton" function to fine-tune when buttons listeners are tied?
+initializeButton can also be used to unhide the buttons--they can be hidden by default.
+
+pomodoro--add a lofi listening section.
+  This site will allow me to have the virtual cottage experience anywhere, not just on a computer with steam and the game downloaded--making
+  a great study aid more flexible in its availability, so i can pomodoro wherever.
+  implement EASY PIE CHART on the timer page
+
+***Done***
+
+buttons.js--add common button listenerevents to this (the "UX" parts), so that 
+they can be applied to all html pages regardless of 
+whatever other functionality is needed. Keep button-specific listener events (onClick) in the
+individual js docs.
+
+index.js--Left and right keyboard arrow keys still work on No Internet Page--disable them.--
+  -->created initArrowKeys function in buttons.js to handle this. Now, only tie arrow keys
+  when I specifically call the function

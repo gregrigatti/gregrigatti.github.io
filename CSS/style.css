@@ -11,10 +11,6 @@ h1{
   padding:25px;
 }
 
-a {
-  text-decoration: none;
-}
-
 a:link{
   color: black;
   font-weight: bold;
@@ -57,7 +53,7 @@ div, span, nav{
 }
 
 #navbar{
-  background-color: #ECCE7D;
+  background-color: hsl(44, 74%, 71%);
   padding:25px;
   font-size: 15px;
   border-top-left-radius: 25px;
@@ -70,9 +66,20 @@ div, span, nav{
 
 #promptAndInput{
   margin: 25px;
+  margin-top: 0px;
   padding-left: 40px;
   padding-right: 40px;
 }
+
+
+#mainBody{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/*#btns{
+  margin-bottom: 25px;
+}*/
 
 /* inner box shadow for text entry
 textarea{
@@ -101,6 +108,27 @@ https://stackoverflow.com/questions/1269245/centering-floating-divs-within-anoth
 .button{
   width: fit-content;
   border-radius: 25%;
+  background-color: hsl(44, 74%, 71%);
+}
+
+/*Cast two separate shadows to simulate a button press--might need to extend shadow over the whole button,
+not just edges?
+.darken{
+  box-shadow: -2px -3px 5px gray inset, 2px 3px 5px gray inset;
+}
+*/
+
+.test{
+  border-color: red;
+}
+
+.darkened{
+  /*shaded version of normal button color*/
+  background-color: hsl(44, 74%, 60%);
+}
+
+.lightened{
+  background-color: hsl(44, 74%, 80%);
 }
 
 .hidden{
