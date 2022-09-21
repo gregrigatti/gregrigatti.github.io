@@ -98,6 +98,7 @@ const btns = {
 	}
 }
 
+//Add OnLoad/Document.ready?
 //listeners unique to specific buttons
 btnLeft.addEventListener("click", btns.back);
 btnRight.addEventListener("click", btns.next);
