@@ -77,6 +77,10 @@ div, span, nav{
   padding-bottom: 25px;
 }
 
+#time{
+  display: inline;
+}
+
 /*#btns{
   margin-bottom: 25px;
 }*/

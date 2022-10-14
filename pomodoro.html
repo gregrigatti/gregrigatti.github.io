@@ -37,13 +37,18 @@
 				<div id="Timer" class="test">
 					<!--able to adjust timer by directly typing or using +/- buttons-->
 					<!--change the text area to a normal text field until the timer ends/is ended-->
-					<h1>0:00</h1>
+					<button id="btnSubtract" class="button"> - </button>
+					<span><h1 id="time">0:00</h1></span>
+					<button id="btnAdd" class="button"> + </button>
 				</div>
 
 				<div id="btns" class="test">
-					<button id="btnLeft" class="button">Previous</button>
-					<button id="btnSubmit" class="button">Submit</button>
-					<button id="btnRight" class="button">Next</button>
+					<button id="btnLeft" class="button">+0:15</button>
+					<button id="btnSubmit" class="button">+1:00</button>
+					<button id="btnRight" class="button">+5:00</button>
+				</div>
+				<div>
+					<button id="btnSubmit" class="button">Start</button>
 				</div>
 				<!--Add time in increments (+/- 15 or 30 sec), pause timer (Pause), reset timer to initial value (Reset)-->
 				<!--Keep controls below the timer [the focal point of the page] in order to keep the same design scheme as writingPrompts page-->
