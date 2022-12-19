@@ -9,8 +9,8 @@
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" defer></script>
 	    <script type="text/javascript" src="./JS/pomodoro.js" defer></script>
-		<script type="text/javascript" src="./JS/buttons.js"></script>
-		<script type="text/javascript" src="../easy-pie-chart/dist/jquery.easypiechart.js"></script>
+		<!--<script type="text/javascript" src="./JS/buttonsPie.js"></script>-->
+		<script type="text/javascript" src="../easy-pie-chart-master/dist/easypiechart.js"></script>
 		
 		<title>Pomodoro timer</title>
 		<link rel="icon" type="image/png" href="./images/Favicon.png">
@@ -32,11 +32,12 @@
 					<!--change the text area to a normal text field until the timer ends/is ended-->
 				</div>
 
-				<div class="chart" data-percent="73%"></div>
+				<div id="time" class="chart" data-percent="73">73%</div>
 
+			<!--
 				<div id="Timer" class="test">
-					<!--able to adjust timer by directly typing or using +/- buttons-->
-					<!--change the text area to a normal text field until the timer ends/is ended-->
+					<\!--able to adjust timer by directly typing or using +/- buttons-\->
+					<\!--change the text area to a normal text field until the timer ends/is ended-\->
 					<button id="btnSubtract" class="button"> - </button>
 					<span><h1 id="time">0:00</h1></span>
 					<button id="btnAdd" class="button"> + </button>
@@ -50,9 +51,10 @@
 				<div>
 					<button id="btnSubmit" class="button">Start</button>
 				</div>
-				<!--Add time in increments (+/- 15 or 30 sec), pause timer (Pause), reset timer to initial value (Reset)-->
-				<!--Keep controls below the timer [the focal point of the page] in order to keep the same design scheme as writingPrompts page-->
-				<!--After starting timer, fade out the buttons (don't just instantly remove them). On hover, buttons reappear.-->
+				<\!--Add time in increments (+/- 15 or 30 sec), pause timer (Pause), reset timer to initial value (Reset)-\->
+				<\!--Keep controls below the timer [the focal point of the page] in order to keep the same design scheme as writingPrompts page-\->
+				<\!--After starting timer, fade out the buttons (don't just instantly remove them). On hover, buttons reappear.-\->
+			-->
 			</main>
     	</div>
 	</body>

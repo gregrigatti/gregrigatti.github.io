@@ -1,6 +1,4 @@
-
-var element = document.getElementsByClassName("chart");
+var element = document.querySelector('.chart');
 new EasyPieChart(element, {
-    //add options here
-    animate: 2000
+    size: 200
 });
