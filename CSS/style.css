@@ -21,14 +21,6 @@ a:visited{
   font-weight: bold;
 }
 
-/*
-div, span, nav{
-  border: 3px;
-  border-style: solid;
-  color: black;
-}
-*/
-
 /*IDs*/
 
 #body{
@@ -64,26 +56,10 @@ div, span, nav{
   display:inline;
 }
 
-#promptAndInput{
-  margin: 25px;
-  margin-top: 0px;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-
 #mainBody{
   padding-top: 25px;
   padding-bottom: 25px;
 }
-
-#btnStartTimer{
-  margin-top: 1.5%;
-}
-
-/*#btns{
-  margin-bottom: 25px;
-}*/
 
 /* inner box shadow for text entry
 textarea{
@@ -93,58 +69,8 @@ textarea{
 
 /*Classes*/
 
-.userInput{
-	height:250px;
-  width:95%;
-  font-size: 22px;
-  margin-bottom: 25px;
-  display:inline-block;
-}
-
-/*"display:inline-block on the two inner divs (the divs .userInput and .promptDivs are attached to)
-and "text-align: center" on the div containing them--this is how to center the inner divs
-https://stackoverflow.com/questions/1269245/centering-floating-divs-within-another-div*/
-.promptDivs{
-  width:80%;
-  display:inline-block;
-}
-
-.button{
-  width: fit-content;
-  border-radius: 25%;
-  background-color: hsl(44, 74%, 71%);
-}
-
-/*
-.percent{
-  display: inline-block;
-  z-index: 1;
-  border: 1px solid red;
-}*/
-
-.chart {
-  position: relative;
-  display: inline-block;
-  width: 110px;
-  height: 110px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  text-align: center;
-}
-.chart canvas {
-  position: absolute;
-  top: -30%;
-  left: -40%;
-}
-.percent {
-  position: absolute;
-  left: 40%;
-  top: 50%;
-}
-.percent::after {
-  content: '%';
-  margin-left: 0.1em;
-  font-size: .8em;
+.hidden{
+  display: none;
 }
 
 /*Cast two separate shadows to simulate a button press--might need to extend shadow over the whole button,
@@ -155,18 +81,13 @@ not just edges?
 */
 
 .test{
-  border-color: red;
+  border: 1px solid red;
 }
 
-.darkened{
-  /*shaded version of normal button color*/
-  background-color: hsl(44, 74%, 60%);
+/*for spacing visualization
+div, span, nav{
+  border: 3px;
+  border-style: solid;
+  color: black;
 }
-
-.lightened{
-  background-color: hsl(44, 74%, 80%);
-}
-
-.hidden{
-  display: none;
-}
+*/

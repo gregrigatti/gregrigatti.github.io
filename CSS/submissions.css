@@ -1,0 +1,24 @@
+#promptAndInput{
+    margin: 25px;
+    margin-top: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: blue;
+}
+
+.userInput{
+    height:250px;
+    width:95%;
+    font-size: 22px;
+    margin-bottom: 25px;
+    display:inline-block;
+}
+
+/*"display:inline-block on the two inner divs (the divs .userInput and .promptDivs are attached to)
+and "text-align: center" on the div containing them--this is how to center the inner divs
+https://stackoverflow.com/questions/1269245/centering-floating-divs-within-another-div*/
+.promptDivs{
+    width:80%;
+    display:inline-block;
+}
+

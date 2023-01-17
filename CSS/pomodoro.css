@@ -1,0 +1,36 @@
+#btnStartTimer{
+    margin-top: 1.5%;
+}
+
+.chart {
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.chart canvas {
+    position: absolute;
+    top: -30%;
+    left: -40%;
+}
+
+.percent {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    /*
+    display: inline-block;
+    z-index: 1;
+    border: 1px solid red;
+    */
+}
+
+.percent::after {
+    content: '%';
+    margin-left: 0.1em;
+    font-size: .8em;
+}  

@@ -1,0 +1,14 @@
+.button{
+    width: fit-content;
+    border-radius: 25%;
+    background-color: hsl(44, 74%, 71%);
+}
+  
+.button:active{
+    /*shaded version of normal button color*/
+    background-color: hsl(44, 74%, 60%);
+}
+  
+.button:hover{
+    background-color: hsl(44, 74%, 80%);
+}

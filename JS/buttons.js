@@ -11,6 +11,8 @@ var btnRight = document.getElementById("btnRight");
 //variable containing an array of all buttons for ease of iteration
 var btnsAll = document.querySelectorAll("button");
 
+var currentPromptDisplayed = 1;
+
 //btns object to hold different btns functions
 //const btns = new Object();
 const btns = {
@@ -71,31 +73,12 @@ const btns = {
 		//let newObject = window.localStorage.getItem("Submission");
 		//console.log(JSON.parse(newObject))
 		console.log('done', JSON.stringify(objectsToSave));
+		alert("Submitted!");
 	},
 
 	refresh:function(){
 		document.location.reload(true);
 	},
-
-	mouseDown:function(){
-		this.classList.remove('lightened');
-		this.classList.add('darkened');
-		//use "this" to specify the button being pressed
-	},
-
-	mouseUp:function(){
-		this.classList.remove('darkened');
-		this.classList.add('lightened');
-	},
-
-	mouseOver:function(){
-		this.classList.add('lightened');
-	},
-
-	mouseOut:function(){
-		this.classList.remove('lightened');
-		this.classList.remove('darkened');
-	}
 }
 
 //Add OnLoad/Document.ready?
@@ -103,16 +86,6 @@ const btns = {
 btnLeft.addEventListener("click", btns.back);
 btnRight.addEventListener("click", btns.next);
 btnSubmit.addEventListener("click", btns.submit);
-
-//listeners common to all buttons
-//Goal: add these to each button using a for loop, rather than having one line per listener/
-for(var each of btnsAll){
-	console.log(each);
-	each.addEventListener("mousedown", btns.mouseDown);
-	each.addEventListener("mouseup", btns.mouseUp);
-	each.addEventListener("mouseover", btns.mouseOver);
-	each.addEventListener("mouseout", btns.mouseOut);
-}
 
 //scroll through prompts upon left and right arrow press
 function initArrowKeys(){

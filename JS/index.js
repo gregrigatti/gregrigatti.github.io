@@ -17,8 +17,6 @@ for(var key in prompts){
 	allPrompts.push(prompts[key]);
 }
 
-var currentPromptDisplayed = 1;
-
 var btnRefresh = document.getElementById("btnRefresh");
 btnRefresh.addEventListener("click", btns.refresh);
 //end of variable declaration
