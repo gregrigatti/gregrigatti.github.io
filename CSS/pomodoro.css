@@ -2,6 +2,10 @@
     margin-top: 1.5%;
 }
 
+#task{
+    text-align: center;
+}
+
 .chart {
     position: relative;
     display: inline-block;

@@ -8,11 +8,11 @@
 		<link rel="stylesheet" type="text/css" href="./CSS/style.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/buttons.css">
 		<link rel="stylesheet" type="text/css" href="./CSS/pomodoro.css">
+		<link rel="stylesheet" type="text/css" href="./timerJS/timerJS.css">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" defer></script>
 	    <script type="text/javascript" src="./JS/pomodoro.js" defer></script>
-		<!--<script type="text/javascript" src="./JS/buttonsPie.js"></script>-->
-		<script type="text/javascript" src="../easy-pie-chart-master/dist/easypiechart.js"></script>
+		<script type="text/javascript" src="./timerJS/timerJS.js" defer></script>
 		
 		<title>Pomodoro timer</title>
 		<link rel="icon" type="image/png" href="./images/Favicon.png">
@@ -28,41 +28,42 @@
 			</nav>
 
 			<main id="mainBody">
-				<div id="Task">
-					<input type="text"/>
+				<div>
+					<h3>What are you working on?</h3>
+					<input type="text" id="task"/>
 					<!--a field where you can specify the specific task you are focusing on during this pomodoro-->
 					<!--change the text area to a normal text field until the timer ends/is ended-->
 				</div>
 
-				<span id="time" class="chart" data-percent="73">
-					<span class="percent">cat</span>
-					<span>Doog hours dog minutes</span>
-				</span>
-
-				<div>
-					<button id="btnStartTimer" class="button">Start</button>
-				</div>
-			<!--
-				<div id="Timer" class="test">
-					<\!--able to adjust timer by directly typing or using +/- buttons-\->
-					<\!--change the text area to a normal text field until the timer ends/is ended-\->
-					<button id="btnSubtract" class="button"> - </button>
-					<span><h1 id="time">0:00</h1></span>
-					<button id="btnAdd" class="button"> + </button>
-				</div>
-
-				<div id="btns" class="test">
-					<button id="btnLeft" class="button">+0:15</button>
-					<button id="btnSubmit" class="button">+1:00</button>
-					<button id="btnRight" class="button">+5:00</button>
-				</div>
-				<div>
-					<button id="btnSubmit" class="button">Start</button>
-				</div>
-				<\!--Add time in increments (+/- 15 or 30 sec), pause timer (Pause), reset timer to initial value (Reset)-\->
-				<\!--Keep controls below the timer [the focal point of the page] in order to keep the same design scheme as writingPrompts page-\->
-				<\!--After starting timer, fade out the buttons (don't just instantly remove them). On hover, buttons reappear.-\->
-			-->
+				<div class="container">
+					<div class="setters">
+					  <div class="minutes-set">
+						<button data-setter="minutes-plus" class="btnActive">+</button>
+						<button data-setter="minutes-minus" class="btnActive">-</button>
+					  </div>
+					  <div class="seconds-set">
+						<button data-setter="seconds-plus" class="btnActive">+</button>
+						<button data-setter="seconds-minus" class="btnActive">-</button>
+					  </div>
+					</div>
+					 <div class="circle">
+						<svg width="300" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+						   <g transform="translate(110,110)">
+							  <circle r="100" class="e-c-base"/>
+							  <g transform="rotate(-90)">
+								 <circle r="100" class="e-c-progress"/>
+								 <g id="e-pointer">
+									<circle cx="100" cy="0" r="8" class="e-c-pointer"/>
+								 </g>
+							  </g>
+						   </g>
+						</svg>
+					 </div>
+					 <div class="controlls">
+						<div class="display-remain-time">00:30</div>
+						<button class="play" id="pause"></button>
+					 </div>
+				  </div>
 			</main>
     	</div>
 	</body>
